@@ -17,7 +17,7 @@ public class AbstractComponents {
 		
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	}
 	
 	public void waitForTheWebElementToAppear(WebElement ele) {
@@ -30,5 +30,9 @@ public class AbstractComponents {
 	
 	public void waitForTheWebElementToDisappear(WebElement ele) {
 		wait.until(ExpectedConditions.invisibilityOf(ele));
+	}
+	
+	public void waitForTheWebElementToBeClickable(WebElement ele) {
+		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ECommerceSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AmazonItemSelectionTest(failed)">
+    <classes>
+      <class name="com.tests.DemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchItems"/>
+        </methods>
+      </class> <!-- com.tests.DemoTest -->
+    </classes>
+  </test> <!-- AmazonItemSelectionTest(failed) -->
+</suite> <!-- Failed suite [ECommerceSuite] -->

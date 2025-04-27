@@ -1,97 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-31T15:21:46 IST" name="Default suite" finished-at="2025-03-31T15:38:19 IST" duration-ms="992630">
+  <suite started-at="2025-04-27T15:20:32 IST" name="ECommerceSuite" finished-at="2025-04-27T15:24:23 IST" duration-ms="231458">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestRunner@1d8bd0de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-31T15:21:46 IST" name="Default test" finished-at="2025-03-31T15:38:19 IST" duration-ms="992630">
-      <class name="cucumber.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestRunner@1d8bd0de]" started-at="2025-03-31T15:21:46 IST" name="setUpClass" finished-at="2025-03-31T15:21:49 IST" duration-ms="2404" status="PASS">
+    <test started-at="2025-04-27T15:20:32 IST" name="AmazonItemSelectionTest" finished-at="2025-04-27T15:24:23 IST" duration-ms="231458">
+      <class name="com.tests.DemoTest">
+        <test-method signature="itemsCount(java.lang.String,java.lang.String)[pri:0, instance:com.tests.DemoTest@238d68ff]" started-at="2025-04-27T15:20:33 IST" name="itemsCount" data-provider="driveTest" finished-at="2025-04-27T15:22:33 IST" duration-ms="120363" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5644f664]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestRunner@1d8bd0de]" started-at="2025-03-31T15:21:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-31T15:27:03 IST" duration-ms="314000" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate the number of cart items"]]>
+                <![CDATA[Samsung Phones]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Searched Item selected in the cart and validate total Amount"]]>
+                <![CDATA[All Categories]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [7] but found [0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [7] but found [0]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at com.stepDefinition.StepDefinitonImpl.validated_the_total_number_of_items_in_the_cart_n_toalAmount(StepDefinitonImpl.java:68)
-at ✽.validated the total number of items in the cart(file:///C:/Users/anshu.pandey01/eclipse-workspace/amazonAuto/src/test/java/cucumber/ItemSelection.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestRunner@1d8bd0de]" started-at="2025-03-31T15:27:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-31T15:32:56 IST" duration-ms="352987" status="PASS">
+        </test-method> <!-- itemsCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.DemoTest@238d68ff]" started-at="2025-04-27T15:22:33 IST" name="tearDown" finished-at="2025-04-27T15:22:34 IST" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="saveProducts(java.lang.String,java.lang.String)[pri:0, instance:com.tests.DemoTest@238d68ff]" started-at="2025-04-27T15:22:34 IST" name="saveProducts" data-provider="driveTest" finished-at="2025-04-27T15:23:29 IST" duration-ms="54643" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validate the total amount of cart items"]]>
+                <![CDATA[Samsung Phones]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Searched Item selected in the cart and validate total Amount"]]>
+                <![CDATA[All Categories]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestRunner@1d8bd0de]" started-at="2025-03-31T15:32:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-31T15:38:03 IST" duration-ms="307851" status="PASS">
+        </test-method> <!-- saveProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.DemoTest@238d68ff]" started-at="2025-04-27T15:23:29 IST" name="tearDown" finished-at="2025-04-27T15:23:31 IST" duration-ms="1389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="searchItems(java.lang.String,java.lang.String)[pri:0, instance:com.tests.DemoTest@238d68ff]" started-at="2025-04-27T15:23:31 IST" name="searchItems" data-provider="driveTest" finished-at="2025-04-27T15:24:22 IST" duration-ms="51080" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Extract the phone text from the cart page"]]>
+                <![CDATA[Samsung Phones]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Searched Item selected in the cart and validate total Amount"]]>
+                <![CDATA[All Categories]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestRunner@1d8bd0de]" started-at="2025-03-31T15:38:03 IST" name="tearDownClass" finished-at="2025-03-31T15:38:19 IST" duration-ms="15266" status="PASS">
+        </test-method> <!-- searchItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.DemoTest@238d68ff]" started-at="2025-04-27T15:24:22 IST" name="tearDown" finished-at="2025-04-27T15:24:23 IST" duration-ms="1450" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.DemoTest -->
+    </test> <!-- AmazonItemSelectionTest -->
+  </suite> <!-- ECommerceSuite -->
 </testng-results>

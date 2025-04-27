@@ -45,7 +45,7 @@ WebDriver driver;
 	List<WebElement> phoneText;
 	
 	public int getTotal() {
-		waitForTheWebElementToAppear(cart);
+		waitForTheWebElementToBeClickable(cart);
 		cart.click();
 		waitForTheWebElementToAppear(indicator);
 		int sum = 0;
